@@ -4,7 +4,7 @@
     <!-- HEADER -->
     <section class="py-14 px-2 text-center">
       <h1 class="text-5xl font-bold">
-        About <span class="text-red-500">Bob's Gym</span>
+        About <span class="text-yellow-500">Samarth Gym</span>
       </h1>
       <p class="text-gray-400 mt-4 max-w-2xl mx-auto">
         We help people transform their bodies and build confidence through
@@ -20,13 +20,13 @@
       <div>
         <h2 class="text-3xl font-bold mb-4">Our Story</h2>
         <p class="text-gray-400 mb-4">
-          Bob's Gym started with one goal — helping people achieve their
+          Samarth Gym started with one goal — helping people achieve their
           fitness dreams with the best environment and coaching.
         </p>
 
         <p class="text-gray-400">
           Our gym offers modern equipment, expert trainers, and personalized
-          fitness plans that help members achieve incredible results.
+          fitness plans that help members achieve incyellowible results.
         </p>
       </div>
 
@@ -37,22 +37,22 @@
       <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-10 text-center">
 
         <div>
-          <h3 class="text-4xl font-bold text-red-500">1200+</h3>
+          <h3 class="text-4xl font-bold text-yellow-500">1200+</h3>
           <p class="text-gray-400">Active Members</p>
         </div>
 
         <div>
-          <h3 class="text-4xl font-bold text-red-500">15</h3>
+          <h3 class="text-4xl font-bold text-yellow-500">15</h3>
           <p class="text-gray-400">Expert Trainers</p>
         </div>
 
         <div>
-          <h3 class="text-4xl font-bold text-red-500">8</h3>
+          <h3 class="text-4xl font-bold text-yellow-500">8</h3>
           <p class="text-gray-400">Years Experience</p>
         </div>
 
         <div>
-          <h3 class="text-4xl font-bold text-red-500">25+</h3>
+          <h3 class="text-4xl font-bold text-yellow-500">25+</h3>
           <p class="text-gray-400">Fitness Programs</p>
         </div>
 
@@ -65,7 +65,7 @@
 
 <script>
 
-import basic_image from '../assets/image.png'
+import basic_image from '../assets/sam_logo.png'
 
 export default {
 

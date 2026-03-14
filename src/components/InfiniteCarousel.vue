@@ -4,7 +4,7 @@
         <!-- Heading -->
         <div class="text-center mb-10">
             <h2 class="text-3xl md:text-4xl font-bold text-white">
-                Inside <span class="text-red-500">BOB'S Gym</span>
+                Inside <span class="text-yellow-500">Samarth Gym</span>
             </h2>
             <p class="text-gray-400 mt-2 max-w-xl mx-auto px-1">
                 Take a look at our modern gym space, professional equipment,
@@ -37,11 +37,11 @@
 </template>
 
 <script>
-import bobs_1 from '../assets/bobs_1.png';
-import bobs_2 from '../assets/bobs_2.png';
-import bobs_3 from '../assets/bobs_3.png';
-import bobs_4 from '../assets/bobs_4.png';
-import bobs_5 from '../assets/bobs_5.png';
+import bobs_1 from '../assets/sam_1.png';
+import bobs_2 from '../assets/sam_2.png';
+import bobs_3 from '../assets/sam_3.png';
+import bobs_4 from '../assets/sam_4.png';
+import bobs_5 from '../assets/sam_5.png';
 
 export default {
     name: "ImageCarousel",

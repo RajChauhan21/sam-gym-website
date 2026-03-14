@@ -1,11 +1,11 @@
 <script>
 import NavBar from './NavBar.vue';
-import bob_image from '../assets/bobs_gym.png'
+import bob_image from '../assets/sam_logo.png'
 import InfiniteCarousel from './InfiniteCarousel.vue';
 
 export default {
     components: {
-        NavBar,InfiniteCarousel
+        NavBar, InfiniteCarousel
     },
     data() {
         return {
@@ -61,7 +61,7 @@ export default {
 
         },
         joinNow(message) {
-            const phone = "9108355887931"
+            const phone = "9109833769885"
             // const message = "Hello, I want to join Bobs Gym. Please share membership details."
             this.message = message;
             const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
@@ -86,55 +86,46 @@ export default {
         <NavBar />
         <!-- HERO -->
         <!-- HERO -->
-        <section class="relative py-20 flex items-center px-6 md:px-12 lg:px-20 sm:px-6 overflow-hidden">
-            <!-- Background diagonal shape (desktop only) -->
-            <div class="absolute top-0 right-0 w-full h-full lg:w-2/3 lg:h-full hidden lg:block">
-                <div class="absolute inset-0 bg-red-600/10"
-                    style="clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);"></div>
-            </div>
+        <section class="py-12 md:py-20 px-6 md:px-12 lg:px-20 bg-gray-950 text-white">
 
-            <!-- Image - Desktop Version (Right Side with Diagonal Clip) -->
-            <div class="absolute top-0 right-0 w-full lg:w-3/5 h-full hidden lg:block">
-                <div class="relative w-full h-full">
-                    <img :src="image" alt="Bob's Gym" class="w-full h-full object-cover"
-                        style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);">
-                    <!-- Gradient overlay for text contrast -->
-                    <div class="absolute inset-0 bg-gradient-to-r from-gray-950 via-transparent to-transparent"></div>
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-10">
+
+                <!-- Text Content -->
+                <div class="md:w-1/2 text-center md:text-left">
+
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight">
+                        Transform Your <span class="text-yellow-500">Body</span>
+                    </h1>
+
+                    <p class="mt-6 text-gray-300 text-lg max-w-xl mx-auto md:mx-0">
+                        Train with the best coaches and world-class equipment.
+                        Start your fitness journey today.
+                    </p>
+
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+
+                        <button @click="joinNow('Hello, I want to join Samarth Gym. Please share membership details.')"
+                            class="px-8 py-3 bg-yellow-500 rounded-xl font-semibold hover:bg-yellow-600 transition shadow-lg">
+                            Join Now
+                        </button>
+
+                        <button @click="scrollToPlans"
+                            class="px-8 py-3 border border-gray-400 rounded-xl hover:bg-gray-800 transition">
+                            View Plans
+                        </button>
+
+                    </div>
                 </div>
-            </div>
 
-            <!-- Image - Mobile Version (Full background) -->
-            <div class="absolute inset-0 lg:hidden">
-                <img :src="image" alt="Bob's Gym" class="w-full h-full object-cover object-[60%_center]">
-                <!-- Dark overlay for better text readability -->
-                <div class="absolute inset-0 bg-gray-950/70"></div>
-            </div>
-
-            <!-- Text Content - Centered on Mobile, Left on Desktop -->
-            <div class="relative z-10 max-w-2xl lg:max-w-2xl mx-auto lg:mx-0 text-left lg:text-left">
-                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
-                    Transform Your <span class="text-red-500">Body</span>
-                </h1>
-
-                <p class="mt-6 text-lg text-gray-300 max-w-xl mx-auto lg:mx-0 sm:mx-0">
-                    Train with the best coaches and world-class equipment.
-                    Start your fitness journey today.
-                </p>
-
-                <div class="mt-8 flex gap-4 justify-center lg:justify-start">
-                    <button @click="joinNow('Hello, I want to join Bobs Gym. Please share membership details.')"
-                        class="px-8 py-3 bg-red-500 rounded-xl font-semibold hover:bg-red-600 transition shadow-lg">
-                        Join Now
-                    </button>
-
-                    <button @click="scrollToPlans"
-                        class="px-8 py-3 border border-gray-400 rounded-xl hover:bg-gray-800 transition">
-                        View Plans
-                    </button>
+                <!-- Image -->
+                <div class="md:w-1/2 flex justify-center">
+                    <img :src="image" alt="Samarth Gym" class="w-full max-w-lg md:max-w-full h-auto object-contain">
                 </div>
+
             </div>
+
         </section>
-        <InfiniteCarousel/>
+        <InfiniteCarousel />
         <!-- FEATURES -->
         <section class="py-8 px-6 max-w-7xl mx-auto">
             <h2 class="text-4xl font-bold text-center mb-14">Our Programs</h2>
@@ -142,7 +133,7 @@ export default {
             <div class="grid md:grid-cols-3 gap-8">
 
                 <div data-aos="fade-up" class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition">
-                    <h3 class="text-xl font-semibold mb-3 text-red-500">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-500">
                         Strength Training
                     </h3>
                     <p class="text-gray-400">
@@ -151,7 +142,7 @@ export default {
                 </div>
 
                 <div data-aos="fade-up" class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition">
-                    <h3 class="text-xl font-semibold mb-3 text-red-500">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-500">
                         Cardio Fitness
                     </h3>
                     <p class="text-gray-400">
@@ -160,7 +151,7 @@ export default {
                 </div>
 
                 <div data-aos="fade-up" class="bg-gray-900 p-8 rounded-2xl hover:scale-105 transition">
-                    <h3 class="text-xl font-semibold mb-3 text-red-500">
+                    <h3 class="text-xl font-semibold mb-3 text-yellow-500">
                         Personal Coaching
                     </h3>
                     <p class="text-gray-400">
@@ -205,7 +196,7 @@ export default {
 
             <div class="max-w-7xl mx-auto text-center mb-14">
                 <h2 class="text-4xl font-bold">
-                    Why Choose <span class="text-red-500">Our Gym</span>
+                    Why Choose <span class="text-yellow-500">Our Gym</span>
                 </h2>
                 <p class="text-gray-400 mt-2">
                     We provide the best environment to achieve your fitness goals.
@@ -216,7 +207,7 @@ export default {
 
                 <div data-aos="fade-up"
                     class="bg-gray-950 p-8 rounded-2xl text-center hover:scale-110 transition duration-300">
-                    <h3 class="text-xl font-semibold text-red-500 mb-3">
+                    <h3 class="text-xl font-semibold text-yellow-500 mb-3">
                         Modern Equipment
                     </h3>
                     <p class="text-gray-400">
@@ -226,7 +217,7 @@ export default {
 
                 <div data-aos="fade-up"
                     class="bg-gray-950 p-8 rounded-2xl text-center hover:scale-110 transition duration-300">
-                    <h3 class="text-xl font-semibold text-red-500 mb-3">
+                    <h3 class="text-xl font-semibold text-yellow-500 mb-3">
                         Flexible Membership
                     </h3>
                     <p class="text-gray-400">
@@ -236,7 +227,7 @@ export default {
 
                 <div data-aos="fade-up"
                     class="bg-gray-950 p-8 rounded-2xl text-center hover:scale-110 transition duration-300">
-                    <h3 class="text-xl font-semibold text-red-500 mb-3">
+                    <h3 class="text-xl font-semibold text-yellow-500 mb-3">
                         Friendly Environment
                     </h3>
                     <p class="text-gray-400">
@@ -264,8 +255,9 @@ export default {
                         <li>Includes Cardio</li>
                     </ul>
 
-                    <button @click="joinNow('Hello, I want to join Bobs Gym. And want to choose 1 Day Have-A-Look Plan.')"
-                        class="mt-6 w-full py-3 bg-red-500 rounded-xl hover:bg-red-600">
+                    <button
+                        @click="joinNow('Hello, I want to join Bobs Gym. And want to choose 1 Day Have-A-Look Plan.')"
+                        class="mt-6 w-full py-3 bg-yellow-500 rounded-xl hover:bg-yellow-600">
                         Choose Plan
                     </button>
                 </div>
@@ -282,7 +274,7 @@ export default {
                     </ul>
 
                     <button @click="joinNow('Hello, I want to join Bobs Gym. And want to choose 1 Month-Warm-Up Plan.')"
-                        class="mt-6 w-full py-3 bg-red-500 rounded-xl hover:bg-red-600">
+                        class="mt-6 w-full py-3 bg-yellow-500 rounded-xl hover:bg-yellow-600">
                         Choose Plan
                     </button>
                 </div>
@@ -299,7 +291,7 @@ export default {
                     </ul>
 
                     <button @click="joinNow('Hello, I want to join Bobs Gym. And want to choose 3 Months-Basic Plan.')"
-                        class="mt-6 w-full py-3 bg-red-500 rounded-xl hover:bg-red-600">
+                        class="mt-6 w-full py-3 bg-yellow-500 rounded-xl hover:bg-yellow-600">
                         Choose Plan
                     </button>
                 </div>
@@ -316,7 +308,7 @@ export default {
                     </ul>
 
                     <button @click="joinNow('Hello, I want to join Bobs Gym. And want to choose 6 Months-Pro Plan.')"
-                        class="mt-6 w-full py-3 bg-red-500 rounded-xl hover:bg-red-600">
+                        class="mt-6 w-full py-3 bg-yellow-500 rounded-xl hover:bg-yellow-600">
                         Choose Plan
                     </button>
                 </div>
@@ -333,7 +325,7 @@ export default {
                     </ul>
 
                     <button @click="joinNow('Hello, I want to join Bobs Gym. And want to choose Yearly-Elite Plan.')"
-                        class="mt-6 w-full py-3 bg-red-500 rounded-xl hover:bg-red-600">
+                        class="mt-6 w-full py-3 bg-yellow-500 rounded-xl hover:bg-yellow-600">
                         Choose Plan
                     </button>
                 </div>
@@ -342,7 +334,7 @@ export default {
         </section>
 
         <!-- CTA -->
-        <section class="py-24 bg-gradient-to-r from-red-600 to-red-500 text-center px-6">
+        <section class="py-24 bg-gradient-to-r from-yellow-600 to-yellow-500 text-center px-6">
             <h2 class="text-4xl font-bold">
                 Ready to Start Your Fitness Journey?
             </h2>
@@ -351,7 +343,7 @@ export default {
                 Join today and transform your life.
             </p>
 
-            <button class="mt-8 px-10 py-4 bg-black rounded-xl hover:bg-gray-900">
+            <button  @click="joinNow('Hello, I want to join Samarth Gym. Please share membership details.')" class="mt-8 px-10 py-4 bg-black rounded-xl hover:bg-gray-900">
                 Get Started
             </button>
         </section>
@@ -363,22 +355,22 @@ export default {
             <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
 
                 <div data-aos="fade-up" data-aos-delay="100" class="hover:scale-105 transition duration-300">
-                    <h3 class="text-4xl font-bold text-red-500">{{ members }}</h3>
+                    <h3 class="text-4xl font-bold text-yellow-500">{{ members }}</h3>
                     <p class="text-gray-400 mt-2">Active Members</p>
                 </div>
 
                 <div data-aos="fade-up" data-aos-delay="100" class="hover:scale-105 transition duration-300">
-                    <h3 class="text-4xl font-bold text-red-500">{{ satisfaction }}%</h3>
+                    <h3 class="text-4xl font-bold text-yellow-500">{{ satisfaction }}%</h3>
                     <p class="text-gray-400 mt-2">Member Satisfaction</p>
                 </div>
 
                 <div data-aos="fade-up" data-aos-delay="100" class="hover:scale-105 transition duration-300">
-                    <h3 class="text-4xl font-bold text-red-500">{{ programs }}</h3>
+                    <h3 class="text-4xl font-bold text-yellow-500">{{ programs }}</h3>
                     <p class="text-gray-400 mt-2">Training Programs</p>
                 </div>
 
                 <div data-aos="fade-up" data-aos-delay="100" class="hover:scale-105 transition duration-300">
-                    <h3 class="text-4xl font-bold text-red-500">{{ access }}</h3>
+                    <h3 class="text-4xl font-bold text-yellow-500">{{ access }}</h3>
                     <p class="text-gray-400 mt-2">Hour Access</p>
                 </div>
 
@@ -394,7 +386,7 @@ export default {
                 <!-- Section Heading -->
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-bold text-white">
-                        Visit <span class="text-red-500">BOB'S Gym</span>
+                        Visit <span class="text-yellow-500">Samarth  Gym</span>
                     </h2>
                     <p class="text-gray-400 mt-3">
                         Come train with us and start your fitness journey today.
@@ -408,33 +400,33 @@ export default {
                     <div class="space-y-6">
 
                         <div>
-                            <h3 class="text-xl font-semibold text-red-500">Address</h3>
+                            <h3 class="text-xl font-semibold text-yellow-500">Address</h3>
                             <p class="text-gray-400 mt-2">
-                                <!-- BOB'S Gym, New Panvel East,<br>
+                                <!-- Samarth  Gym, New Panvel East,<br>
                                 Navi Mumbai, Maharashtra, India -->
 
-                                Basement, Plot-4, Road-17, near Deepak Book Store, <br>
-                                Sector 19, New Panvel East, Panvel, <br>
-                                Navi Mumbai, Panvel, Maharashtra 410206
+                                Shree Sidhivinayak Encave Shop No. 6,7,8,  <br>
+                                near Dayanand Anglo Vedic School, Sector-9,   <br>
+                                New Panvel East, Panvel, Maharashtra 410206
                             </p>
                         </div>
 
                         <div>
-                            <h3 class="text-xl font-semibold text-red-500">Phone</h3>
+                            <h3 class="text-xl font-semibold text-yellow-500">Phone</h3>
                             <p class="text-gray-400 mt-2">
-                                +91 08355 887931
+                                +91 098337 69885
                             </p>
                         </div>
 
                         <!-- <div>
-                            <h3 class="text-xl font-semibold text-red-500">Email</h3>
+                            <h3 class="text-xl font-semibold text-yellow-500">Email</h3>
                             <p class="text-gray-400 mt-2">
                                 contact@bobsgym.com
                             </p>
                         </div> -->
 
                         <div>
-                            <h3 class="text-xl font-semibold text-red-500">Opening Hours</h3>
+                            <h3 class="text-xl font-semibold text-yellow-500">Opening Hours</h3>
                             <p class="text-gray-400 mt-2">
                                 Monday – Saturday: 5:00 AM – 10:00 PM <br>
                                 Sunday: 5:00 AM – 9:00 PM
@@ -442,8 +434,8 @@ export default {
                         </div>
 
                         <!-- Directions Button -->
-                        <a href="https://maps.app.goo.gl/8K7Qytrx2PXBNr3aA" target="_blank"
-                            class="inline-block mt-4 bg-red-500 px-6 py-3 rounded-lg hover:bg-red-600 transition">
+                        <a href="https://maps.app.goo.gl/2mzdsgnjsWDtoife8" target="_blank"
+                            class="inline-block mt-4 bg-yellow-500 px-6 py-3 rounded-lg hover:bg-yellow-600 transition">
                             Get Directions
                         </a>
 
@@ -466,7 +458,7 @@ export default {
         </section>
         <!-- FOOTER -->
         <footer class="py-10 text-center text-gray-500 border-t border-gray-800">
-            © 2026 Bob's Gym. All rights reserved.
+            © 2026 Samarth Gym. All rights reserved.
         </footer>
 
     </div>

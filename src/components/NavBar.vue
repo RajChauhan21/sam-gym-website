@@ -4,17 +4,17 @@
 
             <!-- Logo -->
             <!-- <h1 class="text-2xl font-bold text-white">
-                Bob's<span class="text-red-500">Gym</span>
+                Bob's<span class="text-yellow-500">Gym</span>
             </h1> -->
             <div class="flex items-center gap-3">
 
-                <img src="../assets/gym-logo-pink-2.svg" alt="Royal Seekh Logo" class="h-10 w-auto object-contain" />
+                <img src="../assets/sam_logo.svg" alt="Samarth Gym Logo" class="h-10 w-auto object-contain" />
 
-                <!-- <span class="text-2xl font-bold bg-gradient-to-r from-red-500 to-red-500 bg-clip-text text-transparent">
+                <!-- <span class="text-2xl font-bold bg-gradient-to-r from-yellow-500 to-yellow-500 bg-clip-text text-transparent">
                     Royal Seekh
                 </span> -->
                 <h1 class="text-2xl font-bold text-white">
-                    Bob's<span class="text-red-500">Gym</span>
+                    Samarth <span class="text-yellow-500">Gym</span>
                 </h1>
 
             </div>
@@ -22,23 +22,23 @@
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8">
 
-                <router-link to="/" class="text-gray-300 hover:text-red-500 transition">
+                <router-link to="/" class="text-gray-300 hover:text-yellow-500 transition">
                     Home
                 </router-link>
 
-                <router-link to="/about" class="text-gray-300 hover:text-red-500 transition">
+                <router-link to="/about" class="text-gray-300 hover:text-yellow-500 transition">
                     About
                 </router-link>
 
-                <router-link to="/services" class="text-gray-300 hover:text-red-500 transition">
+                <router-link to="/services" class="text-gray-300 hover:text-yellow-500 transition">
                     Services
                 </router-link>
 
-                <router-link to="/contact" class="text-gray-300 hover:text-red-500 transition">
+                <router-link to="/contact" class="text-gray-300 hover:text-yellow-500 transition">
                     Contact
                 </router-link>
 
-                <button @click="joinNow" class="bg-red-500 px-5 py-2 rounded-lg hover:bg-red-600 transition">
+                <button @click="joinNow" class="bg-yellow-500 px-5 py-2 rounded-lg hover:bg-yellow-600 transition">
                     Join Now
                 </button>
 
@@ -77,8 +77,8 @@ export default {
             this.isOpen = !this.isOpen
         },
         joinNow() {
-            const phone = "919321834217"
-            const message = "Hello, I want to join Bobs Gym. Please share membership details."
+            const phone = "919833769885"
+            const message = "Hello, I want to join Samarth Gym. Please share membership details."
 
             const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
 
