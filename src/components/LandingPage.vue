@@ -246,7 +246,7 @@ export default {
 
                 <div data-aos="fade-right" class="bg-gray-900 p-10 rounded-2xl">
                     <h3 class="text-xl font-semibold">Have-A-Look</h3>
-                    <p class="text-4xl font-bold mt-4">₹500</p>
+                    <p class="text-4xl font-bold mt-4">₹300</p>
                     <p class="text-gray-400 mt-2">1 Day</p>
 
                     <ul class="mt-6 space-y-2 text-gray-400">
@@ -264,7 +264,7 @@ export default {
 
                 <div data-aos="fade-right" class="bg-gray-900 p-10 rounded-2xl">
                     <h3 class="text-xl font-semibold">Warm-Up</h3>
-                    <p class="text-4xl font-bold mt-4">₹2000</p>
+                    <p class="text-4xl font-bold mt-4">₹2500</p>
                     <p class="text-gray-400 mt-2">1 month</p>
 
                     <ul class="mt-6 space-y-2 text-gray-400">
@@ -281,7 +281,7 @@ export default {
 
                 <div data-aos="fade-right" class="bg-gray-900 p-10 rounded-2xl">
                     <h3 class="text-xl font-semibold">Basic</h3>
-                    <p class="text-4xl font-bold mt-4">₹4500</p>
+                    <p class="text-4xl font-bold mt-4">₹5000</p>
                     <p class="text-gray-400 mt-2">3 months</p>
 
                     <ul class="mt-6 space-y-2 text-gray-400">
@@ -298,7 +298,7 @@ export default {
 
                 <div data-aos="fade-right" class="bg-gray-900 p-10 rounded-2xl">
                     <h3 class="text-xl font-semibold">Pro</h3>
-                    <p class="text-4xl font-bold mt-4">₹6000</p>
+                    <p class="text-4xl font-bold mt-4">₹7500</p>
                     <p class="text-gray-400 mt-2">6 months</p>
 
                     <ul class="mt-6 space-y-2 text-gray-400">
@@ -315,7 +315,7 @@ export default {
 
                 <div data-aos="fade-right" class="bg-gray-900 p-10 rounded-2xl">
                     <h3 class="text-xl font-semibold">Elite</h3>
-                    <p class="text-4xl font-bold mt-4">₹8000</p>
+                    <p class="text-4xl font-bold mt-4">₹10000</p>
                     <p class="text-gray-400 mt-2">Yearly</p>
 
                     <ul class="mt-6 space-y-2 text-gray-400">
