@@ -57,7 +57,7 @@
         <div>
           <h3 class="text-xl font-semibold mb-2">Phone</h3>
           <p class="text-gray-400">
-            +91 098337 69885
+            +91 98337 69885
           </p>
         </div>
 
